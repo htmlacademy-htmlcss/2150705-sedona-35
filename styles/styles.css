@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+}
+
+.visually-hidden{
+  visibility: hidden;
+}
+
+/* header */
+
+.page-header{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-list{
+  list-style-type: none;
+}
+
+.controls{
+  list-style-type: none;
+}
+
+.navigation-link{
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button{
+  background-color: #756157;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.description-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+.description-reasons{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333;
+}
+
+/*main*/
+
+.advantages{
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list{
+  list-style: none;
+}
+
+.advantages-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.advatages-description{
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.white-text, .white-text p{
+  color: #fff;
+  background-color: #82B3D3;
+}
+
+.interested-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.interested-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.subscription{
+  background-color: #82B3D3;
+}
+
+.subscription-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.subscription-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+
+}
+
+
+/* catalog-page */
+
+.inner-index-catalog{
+  background-color: #82B3D3;
+}
+
+.inner-index-catalog-title{
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+
+.breadcrumbs-item,
+.catalog-filter-title,
+.control{
+  color: #fff;
+}
+
+.inner-index-hotels-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotels-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotels-type,
+.hotels-price{
+  line-height: 21px;
+}
+
+.button-blue{
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+
+.pagination{
+  list-style-type: none;;
+}
+.pagination-item{
+ background-color: #82B3D3;
+}
+
+.pagination-link{
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+}
+/* page-footer */
+
+.footer-socials-list{
+  list-style-type: none;
+}
+
+.button-vk{
+  background-color: #fff;
+  background-image: url("../images/socials/vk-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.button-telegram{
+  background-color: #fff;
+  background-image: url("../images/socials/tg-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.button-youtube{
+  background-color: #fff;
+  background-image: url("../images/socials/youtube-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-contacts-phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;;
+  color: #000;
+}
