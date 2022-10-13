@@ -107,7 +107,7 @@ body{
 }
 
 .advantages-list{
-  list-style: none;
+  list-style-type: none;
 }
 
 .advantages-title{
@@ -137,6 +137,10 @@ body{
   width: 800px;
   height: 384px;
 
+}
+
+.color-change{
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .white-text, .white-text p{
