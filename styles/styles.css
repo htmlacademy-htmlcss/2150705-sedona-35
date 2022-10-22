@@ -15,12 +15,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   background-color: #fff;
   color: #000;
+  margin: 0 auto;
 }
 
 /* header */
@@ -30,12 +34,29 @@ body {
   line-height: 24px;
 }
 
-.navigation-list {
-  list-style-type: none;
+.logo {
+  margin-right: 40px;
+  margin-left: 70px;
 }
 
-.controls {
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-list {
   list-style-type: none;
+  width: 420px;
+  margin: 0;
+  padding: 0;
+}
+
+.controls-list {
+  list-style-type: none;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -106,6 +127,19 @@ body {
 
 .advantages-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.advantages-item {
+  width: 400px;
+}
+
+.wide-element {
+  width: 800px;
 }
 
 .advantages-title {
@@ -210,17 +244,75 @@ body {
   color: #fff;
 }
 
+.inner-hotels {
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.control-select {
+  margin-right: 70px;
+}
+
+.sorting-icons-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .inner-hotels-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: 200px;
+  width: 369px;
+}
+
+.sorting-container {
+  display: flex;
 }
 
 .hotels-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.catalog-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-filter-group {
+  width: 151px;
+  margin-right: 70px;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: 140px;
+}
+
+.catalog-filter-group:last-child {
+  width: 550px;
+  margin-right: 0;
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.hotels-item {
+  width: 340px;
+  margin-right: 20px;
+}
+
+.hotels-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .hotels-type,
@@ -259,6 +351,12 @@ body {
 }
 
 /* page-footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .footer-socials-list {
   list-style-type: none;
