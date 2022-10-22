@@ -41,7 +41,6 @@ body {
 
 .navigation {
   display: flex;
-  flex-direction: row;
 }
 
 .navigation-list {
@@ -300,7 +299,6 @@ body {
 
 .hotels-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
@@ -354,7 +352,6 @@ body {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
