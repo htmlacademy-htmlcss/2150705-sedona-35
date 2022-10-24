@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -25,8 +29,12 @@ body {
   background-color: #fff;
   color: #000;
   margin: 0 auto;
+  min-height: 100%;
 }
 
+.main-index {
+  flex-grow: 1;
+}
 /* header */
 
 .page-header {
@@ -90,6 +98,9 @@ body {
 }
 
 /*main*/
+
+.main-index {
+}
 
 .hero {
   width: 1200px;
