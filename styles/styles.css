@@ -272,21 +272,22 @@ ol {
 
 .filter-container {
   display: flex;
+  column-gap: 70px;
   padding: 35px 70px 70px 70px;
 }
 
-.catalog-filter-group {
+.checkbox-group {
   width: 151px;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
-.catalog-filter-group:nth-child(2) {
-  margin-right: 140px;
+.radio-group {
+  width: 151px;
+  /* margin-right: 140px; */
 }
 
-.catalog-filter-group:last-child {
+.input-range-group {
   width: 550px;
-  margin-right: 0;
 }
 
 .hotels-list {

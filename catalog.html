@@ -55,7 +55,7 @@
             </ul>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="filter-container">
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="catalog-filter-group checkbox-group">
                       <legend class="catalog-filter-title">Инфрастуктура:</legend>
                       <label class="control">
                           <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked >
@@ -71,7 +71,7 @@
                       </label>
                   </fieldset >
 
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="catalog-filter-group radio-group">
                       <legend class="catalog-filter-title">Тип жилья:</legend>
                       <label class="control">
                           <input class="control-input" type="radio" name="product-group" value="hotel" id="hotel"  checked>
@@ -87,7 +87,7 @@
                       </label>
                   </fieldset >
 
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="catalog-filter-group input-range-group">
                       <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                       <label class="control visually-hidden">Цена от
                           <input class="control" type="text" placeholder="от" value="0" name="min-price">
@@ -201,8 +201,7 @@
         </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="footer-container">
+    <footer class="page-footer footer-container">
         <section class="footer-socials">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-socials-list">
@@ -236,7 +235,6 @@
           <span class="visually-hidden">.htmlacademy</span>
           </a>
         </section>
-      </div>
     </footer>
 </body>
 </html>
