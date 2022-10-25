@@ -32,7 +32,8 @@ body {
   min-height: 100%;
 }
 
-.reset-list {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -87,9 +88,6 @@ body {
 
 /*main*/
 
-.main-index {
-}
-
 .hero {
   width: 1200px;
   height: 485px;
@@ -129,7 +127,6 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .advantages-item {
@@ -146,7 +143,6 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  color: inherit;
 }
 
 .advatages-description {
@@ -248,7 +244,6 @@ body {
 }
 
 .control-select {
-  margin-right: 70px;
 }
 
 .sorting-icons-list {
@@ -262,12 +257,11 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-right: 200px;
-  width: 369px;
 }
 
 .sorting-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .hotels-title {
