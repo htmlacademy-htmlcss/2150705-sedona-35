@@ -93,19 +93,19 @@ p {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 990px;
+  flex-grow: 1;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .navigation-link {
   color: inherit;
   text-decoration: none;
   font-weight: 700;
-  margin-right: 32px;
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
@@ -114,13 +114,13 @@ p {
 .controls-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
 .controls-list .controls-link {
   display: block;
   padding-top: 22px;
   padding-bottom: 22px;
-  margin-right: 25px;
 }
 
 .button {
