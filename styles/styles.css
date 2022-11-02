@@ -199,7 +199,6 @@ p {
 
 .hero-background-sedona {
   display: block;
-  margin: 0 auto;
 }
 
 .description {
@@ -208,14 +207,7 @@ p {
 }
 
 .description-title {
-  margin: 0;
-  padding: 0;
   margin-bottom: 25px;
-}
-
-.description-reasons {
-  padding: 0;
-  margin: 0;
 }
 
 .advantages {
@@ -234,7 +226,7 @@ p {
 }
 
 .advantages-item-white {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .advantages-item-smaller {
