@@ -82,10 +82,12 @@ p {
 .navigation {
   display: flex;
   padding: 0 70px;
+  height: 64px;
 }
 
 .logo {
   margin-right: 44px;
+  z-index: 1;
 }
 
 .nav-container {
@@ -304,6 +306,11 @@ p {
   box-sizing: border-box;
 }
 
+.catalog {
+  background-image: none;
+  background-color: var(--color-white);
+}
+
 .subscription-title {
   font-weight: 700;
   font-size: 30px;
@@ -477,11 +484,6 @@ p {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-}
-
-.catalog {
-  background-image: none;
-  background-color: var(--color-white);
 }
 
 .black-text {
