@@ -178,6 +178,10 @@ p {
 
 .hero-container {
   padding-top: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-background-welcome {
@@ -185,13 +189,11 @@ p {
   height: 45px;
   background-image: url("../images/welcome.svg");
   background-repeat: no-repeat;
-  margin: 0 auto;
   margin-bottom: 11px;
 }
 
 .hero-background-gorgeous {
   display: block;
-  margin: 0 auto;
   margin-bottom: 54px;
 }
 
