@@ -90,15 +90,18 @@
 
                   <fieldset class="catalog-filter-group input-range-group">
                       <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                      <label class="control visually-hidden">Цена от
+                      <div class="filter-wrapper">
+                      <label class="control control-minprice visually-hidden" for="min-price">Цена от</label>
                           <input class="control" type="text" placeholder="от" value="0" name="min-price">
-                      </label>
-                      <label class="control visually-hidden">Цена до
+
+                      <label class="control control-maxprice visually-hidden" for="max-price">Цена до</label>
                           <input class="control-input" type="text" placeholder="до" value="9000" name="max-price">
-                      </label>
-                          <input class="control-input" type="range" min="0" max="10000" step="1" value="9000" id="price-minmax">
+                          <input class="control-input control-input-range" type="range" min="0" max="10000" step="1" value="9000" id="price-minmax">
+                      </div>
+                      <div class="filter-input-wrapper">
                           <input class="button-blue control-input" type="submit" value="Применить">
                           <input class="control-input" type="reset" value="Сбросить">
+                      </div>
                   </fieldset >
                 </div>
               </form>
@@ -133,62 +136,74 @@
                 <li class="hotels-item">
                     <img class="hotels-item-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Ущелье, с красивым звездным небом">
                     <h3 class="hotels-title">Amara Resort & Spa</h3>
-                    <div class="hotels-item-container">
+                    <div class="hotels-wrapper">
+                    <div class="hotels-container">
                       <p class="hotels-type">Гостиница</p>
                       <span class="hotels-price">От 4000 ₽</span>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
                       <a class="button" href="#">Подробнее</a>
                       <button class="button-blue hotels-button" type="button">В избранное</button>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
+                      <span class="hotels-stars four-stars"></span>
                       <span class="hotels-rating">Рейтинг: 8,5</span>
                     </div>
+                  </div>
                 </li>
                 <li class="hotels-item">
                     <img class="hotels-item-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Небольшой лес, вдали видна радуга на фоне скалистых гор.">
                     <h3 class="hotels-title">Villas at Poco Diablo</h3>
-                    <div class="hotels-item-container">
+                    <div class="hotels-wrapper">
+                    <div class="hotels-container">
                       <p class="hotels-type">Гостиница</p>
                       <span class="hotels-price">От 5000 ₽</span>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
                       <a class="button" href="#">Подробнее</a>
                       <button class="button-blue hotels-button" type="button">В избранном</button>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
+                      <span class="hotels-stars four-stars"></span>
                       <span class="hotels-rating">Рейтинг: 9,2</span>
                     </div>
+                  </div>
                 </li>
                 <li class="hotels-item">
                     <img class="hotels-item-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Пустынная местность с деревьями и горами.">
                     <h3 class="hotels-title">Desert Quail Inn</h3>
-                    <div class="hotels-item-container">
+                    <div class="hotels-wrapper">
+                    <div class="hotels-container">
                       <p class="hotels-type">Гостиница</p>
                       <span class="hotels-price">От 2500 ₽</span>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
                       <a class="button" href="#">Подробнее</a>
                       <button class="button-blue hotels-button" type="button">В избранное</button>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
+                      <span class="hotels-stars four-stars"></span>
                       <span class="hotels-rating">Рейтинг: 6,9</span>
                     </div>
+                  </div>
                 </li>
                 <li class="hotels-item">
                     <img class="hotels-item-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Плато на фоне темного звездного неба">
                     <h3 class="hotels-title">GreenTree Inn</h3>
-                    <div class="hotels-item-container">
+                    <div class="hotels-wrapper">
+                    <div class="hotels-container">
                       <p class="hotels-type">Гостиница</p>
                       <span class="hotels-price">От 1500 ₽</span>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
                       <a class="button" href="#">Подробнее</a>
                       <button class="button-blue hotels-button" type="button">В избранное</button>
                     </div>
-                    <div class="hotels-item-container">
+                    <div class="hotels-container">
+                      <span class="hotels-stars two-stars"></span>
                       <span class="hotels-rating">Рейтинг: 5,0</span>
                     </div>
+                  </div>
                 </li>
             </ul>
 
