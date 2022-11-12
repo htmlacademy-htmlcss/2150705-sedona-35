@@ -20,9 +20,11 @@
   --color-brown: #756157;
   --color-darkgray: #333;
   --color-lightblue: #82b3d3;
+  --color-lightblue-68: #68a2ca;
   --color-graylight: #e6e6e6;
   --color-lightblue-12: rgba(131, 179, 211, 0.12);
   --color-lightblue-20: rgba(131, 179, 211, 0.2);
+  --color-lightgrey-03: rgba(104, 162, 202, 0.3);
 }
 
 html {
@@ -144,6 +146,22 @@ input {
   padding-bottom: 22px;
 }
 
+.controls-link-search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.controls-link-heart {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
 .button {
   background-color: var(--color-brown);
   color: var(--color-white);
@@ -228,9 +246,63 @@ input {
   width: 400px;
   padding: 103px 85px 121px 85px;
   box-sizing: border-box;
+  position: relative;
 }
 
-.advantages-item-white {
+.secondary-list .advantages-item {
+  padding: 182px 85px 81px;
+}
+
+.secondary-list .advantages-title {
+  margin-bottom: 30px;
+}
+
+.advantages-item-house:after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 80px;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  margin-left: -38px;
+  width: 75px;
+  height: 72px;
+}
+
+.advantages-item-food:after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 80px;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  margin-left: -38px;
+  width: 75px;
+  height: 72px;
+}
+
+.advantages-item-gift:after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 80px;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  margin-left: -38px;
+  width: 75px;
+  height: 72px;
+}
+
+.advantages-item-colored {
   background-color: var(--color-white);
 }
 
@@ -387,8 +459,31 @@ input {
 .breadcrumbs-item:first-child {
   background-image: url(../images/breadcrumbs-icon.svg);
   background-repeat: no-repeat;
-  width: 12px;
+  width: 13px;
+  height: 13px;
+  position: relative;
+}
+
+.breadcrumbs-item:first-child:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 23px;
+  margin-top: -5px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  width: 8px;
   height: 12px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .catalog-filter-group {
@@ -471,6 +566,7 @@ input {
 .filter-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 143px);
+  gap: 2px;
   grid-template-areas:
     "minprice maxprice"
     "range range";
@@ -531,6 +627,7 @@ input {
 .button-blue {
   background-color: var(--color-lightblue);
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .pagination-list {
@@ -550,7 +647,6 @@ input {
   box-sizing: border-box;
   padding: 12px;
   text-decoration: none;
-
   color: var(--color-white);
   font-weight: 700;
   font-size: 20px;
@@ -558,7 +654,16 @@ input {
   text-align: center;
 }
 
-.pagination-link {
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: var(--color-lightblue-68);
+}
+
+.pagination-link:active {
+  opacity: 0.3;
+}
+.pagination-item:active {
+  background-color: var(--color-lightblue);
 }
 
 .black-text {
@@ -585,22 +690,22 @@ input {
   background-color: var(--color-white);
   background-repeat: no-repeat;
   display: block;
-  box-sizing: border-box;
-  width: 25px;
-  height: 20px;
-  padding: 10px;
 }
 
-.button-vk {
-  background-image: url("../images/socials/vk-icon.svg");
+.socials-icon {
+  fill: var(--color-lightblue);
 }
 
-.button-telegram {
-  background-image: url("../images/socials/tg-icon.svg");
+.socials-icon:hover path {
+  fill: var(--color-lightblue-68);
 }
 
-.button-youtube {
-  background-image: url("../images/socials/youtube-icon.svg");
+.socials-icon:active path {
+  fill: var(--color-lightgrey-03);
+}
+
+.button-socials:focus .socials-icon {
+  fill: var(--color-lightblue-68);
 }
 
 .footer-contacts-phone {
@@ -609,4 +714,29 @@ input {
   text-align: center;
   text-decoration: none;
   color: var(--color-black);
+}
+
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-logo {
+  fill: var(--color-black);
+}
+
+.htmlacademy-logo:hover path {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus .htmlacademy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-logo:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
