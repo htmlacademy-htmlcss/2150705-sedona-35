@@ -25,6 +25,7 @@
   --color-lightblue-12: rgba(131, 179, 211, 0.12);
   --color-lightblue-20: rgba(131, 179, 211, 0.2);
   --color-lightgrey-03: rgba(104, 162, 202, 0.3);
+  --color-darkgrey-03: rgba(117, 97, 87, 0.3);
 }
 
 html {
@@ -138,6 +139,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  align-items: center;
 }
 
 .controls-link {
@@ -146,20 +148,18 @@ input {
   padding-bottom: 22px;
 }
 
-.controls-link-search {
-  background-image: url("../images/search.svg");
+.controls-icon {
   background-repeat: no-repeat;
   background-position: center;
   width: 20px;
   height: 20px;
 }
+.controls-link-search {
+  background-image: url("../images/search.svg");
+}
 
 .controls-link-heart {
   background-image: url("../images/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 20px;
 }
 
 .button {
@@ -170,6 +170,9 @@ input {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  padding: 8px 34px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .description-title {
@@ -257,49 +260,31 @@ input {
   margin-bottom: 30px;
 }
 
-.advantages-item-house:after {
+.advantages-item:after {
   content: "";
   position: absolute;
-  background-image: url("../images/house.svg");
+
   background-repeat: no-repeat;
   background-position: center;
   top: 80px;
   left: 50%;
   bottom: 0;
   right: 0;
-  margin-left: -38px;
+  transform: translateX(-50%);
   width: 75px;
   height: 72px;
+}
+
+.advantages-item-house:after {
+  background-image: url("../images/house.svg");
 }
 
 .advantages-item-food:after {
-  content: "";
-  position: absolute;
   background-image: url("../images/food.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 80px;
-  left: 50%;
-  bottom: 0;
-  right: 0;
-  margin-left: -38px;
-  width: 75px;
-  height: 72px;
 }
 
 .advantages-item-gift:after {
-  content: "";
-  position: absolute;
   background-image: url("../images/gift.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 80px;
-  left: 50%;
-  bottom: 0;
-  right: 0;
-  margin-left: -38px;
-  width: 75px;
-  height: 72px;
 }
 
 .advantages-item-colored {
@@ -420,6 +405,25 @@ input {
 
 .subscription-form {
   text-align: center;
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
+}
+
+.field {
+  padding: 14px 20px;
+  margin: 0;
+  font: inherit;
+  flex-grow: 1;
+}
+
+.field:hover,
+.filed:focus {
+  opacity: 0.9;
+}
+
+.field:focus-visible {
+  outline: none;
 }
 
 .subscribe-button {
@@ -527,6 +531,7 @@ input {
 .hotels-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hotels-stars {
@@ -624,10 +629,48 @@ input {
   line-height: 21px;
 }
 
+.hotels-button {
+  background-color: var(--color-lightblue);
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.product-button {
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 26px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.favorites {
+  background-color: #7db54f;
+  padding: 8px 18px;
+}
+
+.hotels-rating {
+  background-color: #f2f2f2;
+  padding: 8px 22px;
+}
+
 .button-blue {
   background-color: var(--color-lightblue);
   color: var(--color-white);
   cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 50px;
 }
 
 .pagination-list {
@@ -718,11 +761,11 @@ input {
 
 .footer-contacts-phone:hover,
 .footer-contacts-phone:focus {
-  color: #756157;
+  color: var(--color-brown);
 }
 
 .footer-contacts-phone:active {
-  color: rgba(117, 97, 87, 0.3);
+  color: var(--color-darkgrey-03);
 }
 
 .htmlacademy-logo {
@@ -730,13 +773,13 @@ input {
 }
 
 .htmlacademy-logo:hover path {
-  fill: #756157;
+  fill: var(--color-brown);
 }
 
 .htmlacademy-link:focus .htmlacademy-logo {
-  fill: #756157;
+  fill: var(--color-brown);
 }
 
 .htmlacademy-logo:active path {
-  fill: rgba(117, 97, 87, 0.3);
+  fill: var(--color-darkgrey-03);
 }
