@@ -18,7 +18,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-brown: #756157;
-  --color-darkgray: #333;
+  --color-black-33: #333;
   --color-lightblue: #82b3d3;
   --color-lightblue-68: #68a2ca;
   --color-graylight: #e6e6e6;
@@ -175,6 +175,11 @@ input {
   text-decoration: none;
 }
 
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+}
+
 .description-title {
   font-weight: 700;
   font-size: 30px;
@@ -187,7 +192,7 @@ input {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: var(--color-darkgray);
+  color: var(--color-black-33);
 }
 
 /*main*/
@@ -263,7 +268,6 @@ input {
 .advantages-item:after {
   content: "";
   position: absolute;
-
   background-repeat: no-repeat;
   background-position: center;
   top: 80px;
@@ -312,7 +316,7 @@ input {
 .advatages-description {
   line-height: 21px;
   text-align: center;
-  color: var(--color-darkgray);
+  color: var(--color-black-33);
 }
 
 .advantages-image1 {
@@ -356,7 +360,7 @@ input {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: var(--color-darkgray);
+  color: var(--color-black-33);
   margin-bottom: 62px;
 }
 
