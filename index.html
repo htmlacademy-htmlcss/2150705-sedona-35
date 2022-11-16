@@ -123,7 +123,7 @@
         <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
             <input class="button-blue subscribe-button" type="submit" value="Подписаться">
         </form>
       </section>
@@ -171,5 +171,37 @@
           </a>
         </section>
     </footer>
+
+    <div class="modal-container grid-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label" for="start-date">
+              Дата заезда:
+            </label>
+            <input class="modal-input" type="text" name="start-date" id="start-date" placeholder="" value="27 апреля 2020">
+            <p class="massage error-massage">Мы не можем отправить вас в прошлое.</p>
+            <label class="form-label" for="end-date">
+              Дата выезда:
+            </label>
+            <input class="modal-input" type="text" name="end-date" id="end-date" placeholder="" value="1 сентября 2023">
+            <p class="massage">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="form-label" for="">
+              Взрослые:
+            </label>
+            <input class="modal-input count-adults" type="text">
+            <label class="form-label" for="">
+              Дети:
+            </label>
+            <input class="modal-input count-children" type="text">
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
 </body>
 </html>

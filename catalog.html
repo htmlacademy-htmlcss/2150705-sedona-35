@@ -62,49 +62,65 @@
                 <div class="filter-container">
                   <fieldset class="catalog-filter-group checkbox-group">
                       <legend class="catalog-filter-title">Инфрастуктура:</legend>
-                      <label class="control">
-                          <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked >
-                          Бассейн
+                      <label class="control-caption">
+                          <input class="control-input visually-hidden" type=checkbox name="swimming-pool" id="swimming-pool" checked >
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
                       </label>
-                      <label class="control">
-                          <input class="control-input" type="checkbox" name="parking" id="parking" checked>
-                          Парковка
+                      <label class="control-caption">
+                          <input class="control-input visually-hidden" type="checkbox" name="parking" id="parking" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
                       </label>
-                      <label class="control">
-                          <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi" >
-                          Wi-Fi
+                      <label class="control-caption">
+                          <input class="control-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
                       </label>
                   </fieldset >
 
                   <fieldset class="catalog-filter-group radio-group">
                       <legend class="catalog-filter-title">Тип жилья:</legend>
-                      <label class="control">
-                          <input class="control-input" type="radio" name="product-group" value="hotel" id="hotel"  checked>
-                          Гостиница
+                      <label class="control-caption">
+                          <input class="control-input visually-hidden" type="radio" name="product-group" value="hotel" id="hotel"  checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
                       </label>
-                      <label class="control">
-                          <input class="control-input" type="radio" name="product-group" value="motel" id="motel" >
-                          Мотель
+                      <label class="control-caption">
+                          <input class="control-input visually-hidden" type="radio" name="product-group" value="motel" id="motel" >
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
                       </label>
-                      <label class="control">
-                          <input class="control-input" type="radio" name="product-group" value="apartments" id="apartments" >
-                          Апартаменты
+                      <label class="control-caption">
+                          <input class="control-input visually-hidden" type="radio" name="product-group" value="apartments" id="apartments" >
+                          <span class="control-mark"></span>
+                          <span class="control-label">Апартаменты</span>
                       </label>
                   </fieldset >
 
                   <fieldset class="catalog-filter-group input-range-group">
                       <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                      <div class="filter-wrapper">
-                      <label class="control control-minprice visually-hidden" for="min-price">Цена от</label>
-                          <input class="control" type="text" placeholder="от" value="0" name="min-price">
-
-                      <label class="control control-maxprice visually-hidden" for="max-price">Цена до</label>
+                      <div class="filter-wrapper range">
+                      <label class="control control-minprice visually-hidden" for="min-price">
+                        Цена от
+                      </label>
+                        <input class="control-input" type="text" placeholder="от" value="0" name="min-price">
+                      <label class="control control-maxprice visually-hidden" for="max-price">
+                        Цена до
+                      </label>
                           <input class="control-input" type="text" placeholder="до" value="9000" name="max-price">
-                          <input class="control-input control-input-range" type="range" min="0" max="10000" step="1" value="9000" id="price-minmax">
+                          <div class="range-scale">
+                            <div class="range-bar">
+                              <button class="range-toggle toggle-min" type="button">
+                              </button>
+                              <button class="range-toggle toggle-max" type="button">
+                              </button>
+                            </div>
+                          </div>
                       </div>
                       <div class="filter-input-wrapper">
-                          <input class="button-blue control-input" type="submit" value="Применить">
-                          <input class="control-input" type="reset" value="Сбросить">
+                          <input class="control-input button-blue" type="submit" value="Применить">
+                          <input class="control-input control-reset" type="reset" value="Сбросить">
                       </div>
                   </fieldset >
                 </div>
@@ -123,16 +139,19 @@
 
             <ul class="sorting-icons-list">
                 <li class="sorting-icons-item">
-                    <button class="sorting-icons-btn" type="button">tile</button>
+                    <a class="sorting-icons-btn sorting-icons-tile current-icon">
                     <span class="visually-hidden">Отображение плиткой</span>
+                    </a>
                 </li>
                 <li class="sorting-icons-item">
-                    <button class="sorting-icons-btn" type="button">large-icons</button>
+                    <a class="sorting-icons-btn sorting-icons-largeicon">
                     <span class="visually-hidden">Отображение крупные значки</span>
+                    </a>
                 </li>
                 <li class="sorting-icons-item">
-                    <button class="sorting-icons-btn" type="button">list</button>
+                    <a class="sorting-icons-btn sorting-icons-listed">
                     <span class="visually-hidden">Отображение списком</span>
+                    </a>
                 </li>
             </ul>
           </div>
@@ -236,8 +255,8 @@
                 <h2 class="subscription-title black-text">Подпишитесь на рассылку</h2>
                 <p class="subscription-description black-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <label for="newsletter-email">Email</label>
-                    <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                    <label class=" visually-hidden" for="newsletter-email">Email</label>
+                    <input class="field input-email" placeholder="Ваш e-mail" type="email" name="newsletter-email"
                      id="newsletter-email" required>
                     <input class="button-blue subscribe-button" type="submit" value="Подписаться">
                 </form>
