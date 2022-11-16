@@ -1069,3 +1069,7 @@ input {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.modal-container-close {
+  display: none;
+}
