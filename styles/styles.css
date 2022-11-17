@@ -52,23 +52,21 @@ body {
   box-shadow: 0 0 5px 1px var(--color-graylight);
 }
 
-ul,
-ol {
+.reset-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+.reset-title {
   margin: 0;
 }
 
-input {
+.reset-paragraph {
+  margin: 0;
+}
+
+.reset-input {
   border: none;
 }
 
@@ -96,11 +94,11 @@ input {
 .navigation {
   display: flex;
   padding: 0 70px;
-  height: 64px;
+  min-height: 64px;
 }
 
 .logo {
-  margin-right: 44px;
+  position: absolute;
   z-index: 1;
 }
 
@@ -108,12 +106,14 @@ input {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  margin-left: 186px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  width: 440px;
 }
 
 .navigation-link {
@@ -123,6 +123,11 @@ input {
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  opacity: 0.7;
 }
 
 .navigation-item {
@@ -152,20 +157,29 @@ input {
   display: block;
   padding-top: 22px;
   padding-bottom: 22px;
+  position: relative;
 }
 
 .controls-icon {
-  background-repeat: no-repeat;
-  background-position: center;
   width: 20px;
   height: 20px;
 }
-.controls-link-search {
-  background-image: url("../images/search.svg");
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--color-black);
 }
 
-.controls-link-heart {
-  background-image: url("../images/heart.svg");
+.navigation-icon-favourite {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  fill: var(--color-black);
 }
 
 .button {
@@ -217,25 +231,12 @@ input {
   padding-top: 51px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-}
-
-.hero-background-welcome {
-  width: 188px;
-  height: 45px;
-  background-image: url("../images/welcome.svg");
-  background-repeat: no-repeat;
-  margin-bottom: 11px;
 }
 
 .hero-background-gorgeous {
   display: block;
   margin-bottom: 54px;
-}
-
-.hero-background-sedona {
-  display: block;
 }
 
 .description {
@@ -325,16 +326,8 @@ input {
   color: var(--color-black-33);
 }
 
-.advantages-image1 {
-  background-image: url("../images/bg-advantages1.jpg");
-  width: 800px;
-  height: 384px;
-}
-
-.advantages-image2 {
-  background-image: url("../images/bg-advantages2.jpg");
-  width: 800px;
-  height: 384px;
+.advantages-image {
+  display: block;
 }
 
 .color-change {
@@ -442,7 +435,18 @@ input {
 }
 
 .subscribe-button {
+  background-color: var(--color-lightblue);
+  color: var(--color-white);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
   padding: 8px 50px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--color-lightblue-68);
 }
 
 /* catalog-page */
@@ -916,6 +920,11 @@ input {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+}
+
+.pagination-dots {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .pagination-item:hover,
