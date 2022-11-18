@@ -58,7 +58,7 @@
     <main class="main-index">
       <div class="hero">
       <div class="hero-container">
-        <img class="hero-background-gorgeous" src="images/main-title.svg" width="458" height="352" alt="Добро пожаловать.">
+        <img class="hero-background-gorgeous" src="images/main-title.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
       </div>
       </div>
        <section class="description">
@@ -100,15 +100,15 @@
         <ul class="advantages-list secondary-list reset-list">
           <li class="advantages-item advantages-item-house advantages-icons">
             <h3 class="advantages-title reset-title">Жильё</h3>
-            <p class="advatages-description reset-paragraph">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="advatages-description reset-paragraph">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
           </li>
           <li class="advantages-item advantages-item-colored advantages-icon advantages-item-food">
             <h3 class="advantages-title reset-title">Еда</h3>
-            <p class="advatages-description reset-paragraph">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="advatages-description reset-paragraph">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item advantages-item-gift advantages-icon">
             <h3 class="advantages-title reset-title">Сувениры</h3>
-            <p class="advatages-description reset-paragraph">Не только китайского, но и настоящего местного производства!</p>
+            <p class="advatages-description reset-paragraph">Не только китайского,<br> но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -116,7 +116,7 @@
       <section class="interested">
         <h2 class="interested-title reset-title">Заинтересовались?</h2>
         <p class="interested-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button interested-search" href="catalog.html" >Поиск гостинницы в Седоне</a>
+        <a class="button interested-search" href="catalog.html" >Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscription">
@@ -174,30 +174,66 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
         <section class="modal-content">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
           <h2 class="modal-title reset-title">Поиск гостиницы в Седоне</h2>
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form-label" for="start-date">
-              Дата заезда:
-            </label>
-            <input class="modal-input reset-input" type="text" name="start-date" id="start-date" placeholder="" value="27 апреля 2020">
-            <p class="massage error-massage reset-paragraph">Мы не можем отправить вас в прошлое.</p>
-            <label class="form-label" for="end-date">
-              Дата выезда:
-            </label>
-            <input class="modal-input reset-input" type="text" name="end-date" id="end-date" placeholder="" value="1 сентября 2023">
-            <p class="massage reset-paragraph">На эти даты есть свободные номера. Пока есть.</p>
-            <label class="form-label" for="">
-              Взрослые:
-            </label>
-            <input class="modal-input count-adults reset-input" type="text">
-            <label class="form-label" for="">
-              Дети:
-            </label>
-            <input class="modal-input count-children reset-input" type="text">
+          <form
+            class="search-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="form-row">
+              <label class="form-label" for="start-date"> Дата заезда: </label>
+              <input
+                class="modal-input modal-input-date"
+                type="text"
+                name="start-date"
+                id="start-date"
+                placeholder=""
+                value="27 апреля 2020"
+              />
+              <p class="message error-message reset-paragraph">
+                Мы не можем отправить вас в прошлое.
+              </p>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="end-date"> Дата выезда: </label>
+              <input
+                class="modal-input modal-input-date"
+                type="text"
+                name="end-date"
+                id="end-date"
+                placeholder=""
+                value="1 сентября 2023"
+              />
+              <p class="message reset-paragraph">
+                На эти даты есть свободные номера. Пока есть.
+              </p>
+            </div>
+            <div class="form-row">
+              <div class="form-row">
+                <label class="form-label" for="">Взрослые:</label>
+                <button class="button-minus visually-hidden" type="button"></button>
+                <input
+                  class="modal-input count-adults reset-input"
+                  type="text"
+                  value="2"
+                />
+                <button class="button-plus visually-hidden" type="button"></button>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="">Дети:</label>
+                <button class="button-minus visually-hidden" type="button"></button>
+                <input
+                  class="modal-input count-children reset-input"
+                  type="text"
+                  value="2"
+                />
+                <button class="button-plus visually-hidden" type="button"></button>
+              </div>
+            </div>
             <button class="modal-button" type="submit">Найти</button>
           </form>
         </section>

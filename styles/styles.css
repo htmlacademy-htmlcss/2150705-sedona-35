@@ -170,7 +170,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -10px;
   margin: auto;
   fill: var(--color-black);
 }
@@ -178,7 +178,7 @@ body {
 .navigation-icon-favourite {
   position: absolute;
   top: 11px;
-  left: 11px;
+  left: 3px;
   fill: var(--color-black);
 }
 
@@ -225,6 +225,7 @@ body {
     url("../images/main-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center calc(100% + 0.5px), center;
+  background-color: #ccc;
 }
 
 .hero-container {
@@ -340,10 +341,7 @@ body {
 }
 
 .interested {
-  padding: 105px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 96px 0;
 }
 
 .interested-title {
@@ -360,13 +358,18 @@ body {
   line-height: 26px;
   text-align: center;
   color: var(--color-black-33);
-  margin-bottom: 62px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .interested-search {
-  display: block;
   margin: 0 auto;
   padding: 8px 50px;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  display: block;
   width: fit-content;
 }
 
@@ -442,6 +445,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .subscribe-button:hover,
@@ -456,7 +461,7 @@ body {
   background-image: url("../images/catalog-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px 70px 45px;
+  padding: 35px 70px 70px 70px;
   color: var(--color-white);
 }
 
@@ -475,7 +480,12 @@ body {
   gap: 28px;
 }
 
-.breadcrumbs-item,
+.breadcrumbs-item {
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .catalog-filter-title {
   color: var(--color-white);
 }
@@ -514,8 +524,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top: 32px;
+  padding: 0;
   margin: 0;
+  padding-top: 32px;
   border: none;
 }
 
@@ -551,7 +562,7 @@ body {
 }
 
 .inner-hotels {
-  padding: 50px 70px 60px 70px;
+  padding: 50px 70px 0 70px;
   margin: 0 auto;
 }
 
@@ -560,6 +571,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: auto;
 }
 
 .sorting-icons-list {
@@ -579,7 +591,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .hotels-container {
@@ -603,8 +615,13 @@ body {
 
 .filter-container {
   display: flex;
-  column-gap: 70px;
+  column-gap: 138px;
   justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  gap: 70px;
 }
 
 .checkbox-group {
@@ -633,7 +650,7 @@ body {
 
 .control-select {
   box-sizing: border-box;
-  padding: 14px 131px 14px 20px;
+  padding: 14px 100px 14px 20px;
   margin: 0;
   font: inherit;
   border: 2px solid #e5e5e5;
@@ -641,9 +658,11 @@ body {
   color: #333;
   line-height: 21px;
   background-image: url("../images/arrow-down.svg");
-  background-position: right 21px center;
+  background-position: right 16px center;
   background-repeat: no-repeat;
   appearance: none;
+  margin-right: 70px;
+  font-size: 18px;
 }
 
 .control-minprice {
@@ -678,13 +697,21 @@ body {
 }
 
 .control-input[type="text"] {
-  height: 43px;
+  height: 46px;
   box-sizing: border-box;
   padding: 12px 20px;
   font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.control-input[type="submit"],
+.control-input[type="reset"] {
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .control-input[type="text"]:focus {
@@ -700,6 +727,8 @@ body {
   font: inherit;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .control-input[type="text"]::placeholder {
@@ -729,7 +758,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -20px;
 }
 
 .range-toggle:hover {
@@ -749,6 +778,10 @@ body {
   border-radius: 4px;
   background-color: var(--color-white);
   z-index: 1;
+}
+
+.control-input:focus + .control-mark {
+  outline: 2px solid var(--color-black);
 }
 
 .control-label {
@@ -776,6 +809,10 @@ body {
 .control-caption:hover,
 .control-caption:active {
   opacity: 0.3;
+}
+
+.control-input:focus .control-caption {
+  border: 1px solid red;
 }
 
 .control-input:disabled + .control-mark {
@@ -898,14 +935,27 @@ body {
   background-color: #f2f2f2;
 }
 
+.input-email:hover {
+  opacity: 0.7;
+}
+
 .pagination-list {
   display: flex;
   gap: 8px;
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
   background-color: var(--color-lightblue);
+}
+
+.pagination-item-current {
+  background-color: var(--color-white-f2);
+}
+
+.pagination-item-current .pagination-link {
+  color: var(--color-black);
 }
 
 .pagination-link {
@@ -937,6 +987,10 @@ body {
 }
 .pagination-item:active {
   background-color: var(--color-lightblue);
+}
+
+.pagination-item-current:hover {
+  background-color: var(--color-white-f2);
 }
 
 .black-text {
@@ -1014,6 +1068,8 @@ body {
   fill: var(--color-darkgrey-03);
 }
 
+/* модальное окно */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1022,6 +1078,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 
 .modal {
@@ -1041,7 +1099,7 @@ body {
   position: absolute;
   padding: 0;
   top: 0;
-  right: 0;
+  right: -14px;
   width: 52px;
   height: 52px;
   background-color: var(--color-white-f2);
@@ -1079,6 +1137,70 @@ body {
   text-transform: uppercase;
 }
 
-.modal-container-close {
-  display: none;
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
+
+.form-label {
+  font: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-input {
+  padding: 12px 20px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  background-color: var(--color-white-f2);
+  width: 110px;
+  box-sizing: border-box;
+}
+
+.modal-input-date {
+  border: none;
+  flex-grow: 1;
+  position: relative;
+  background-image: url("..//images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.modal-input-date:focus {
+  background-image: none;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.form-row {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.form-label {
+  min-width: 103px;
+}
+
+.message {
+  position: absolute;
+  bottom: -25px;
+  left: 155px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.error-message {
+  color: rgba(255, 87, 87, 1);
+}
+
+/* .modal-container-close {
+  display: none;
+} */
