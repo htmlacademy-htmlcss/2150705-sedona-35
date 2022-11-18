@@ -212,26 +212,42 @@
                 На эти даты есть свободные номера. Пока есть.
               </p>
             </div>
-            <div class="form-row">
-              <div class="form-row">
-                <label class="form-label" for="">Взрослые:</label>
-                <button class="button-minus visually-hidden" type="button"></button>
-                <input
-                  class="modal-input count-adults reset-input"
-                  type="text"
-                  value="2"
-                />
-                <button class="button-plus visually-hidden" type="button"></button>
+
+            <div class="form-row with-shorts">
+              <div class="form-row shorts">
+                <label class="form-label" for="adults">Взрослые:</label>
+                <div class="adults-count-wrapper">
+                  <button class="button-minus" type="button"></button>
+                  <input
+                    class="modal-input count-adults reset-input"
+                    type="text"
+                    value="2"
+                    id="adults"
+                  />
+                  <button class="button-plus" type="button"></button>
+               </div>
               </div>
+
               <div class="form-row">
-                <label class="form-label" for="">Дети:</label>
-                <button class="button-minus visually-hidden" type="button"></button>
-                <input
-                  class="modal-input count-children reset-input"
-                  type="text"
-                  value="2"
-                />
-                <button class="button-plus visually-hidden" type="button"></button>
+                <label class="form-label" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+               <div class="children-count-wrapper">
+                 <button class="button-minus" type="button"></button>
+                 <input
+                 class="modal-input count-children reset-input"
+                 type="text"
+                 value="2"
+                 id="children"
+                 />
+                 <button class="button-plus" type="button"></button>
+                </div>
               </div>
             </div>
             <button class="modal-button" type="submit">Найти</button>
