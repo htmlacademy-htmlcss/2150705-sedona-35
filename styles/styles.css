@@ -278,13 +278,13 @@ body {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  top: 80px;
+  top: 76px;
   left: 50%;
   bottom: 0;
   right: 0;
   transform: translateX(-50%);
   width: 75px;
-  height: 72px;
+  height: 76px;
 }
 
 .advantages-item-house:after {
@@ -297,6 +297,24 @@ body {
 
 .advantages-item-gift:after {
   background-image: url("../images/gift.svg");
+}
+
+.advantages-item-smaller:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 46%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.line-after:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 49%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-item-colored {
@@ -546,7 +564,7 @@ body {
   border-radius: 4px;
 }
 .current-icon {
-  outline: 2px solid var(--color-black);
+  border: 2px solid var(--color-black);
 }
 
 .sorting-icons-tile {
@@ -576,7 +594,7 @@ body {
 
 .sorting-icons-list {
   display: flex;
-  gap: 8px;
+  gap: 5px;
   align-items: center;
 }
 
@@ -609,19 +627,23 @@ body {
   width: 42px;
 }
 
+.three-stars {
+  width: 68px;
+}
+
 .four-stars {
   width: 96px;
 }
 
 .filter-container {
   display: flex;
-  column-gap: 138px;
+  column-gap: 139px;
   justify-content: space-between;
 }
 
 .flex-container {
   display: flex;
-  gap: 70px;
+  gap: 68px;
 }
 
 .checkbox-group {
@@ -661,7 +683,7 @@ body {
   background-position: right 16px center;
   background-repeat: no-repeat;
   appearance: none;
-  margin-right: 70px;
+  margin-right: 72px;
   font-size: 18px;
 }
 
@@ -856,7 +878,7 @@ body {
 }
 
 .hotels-item-image {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   object-fit: contain;
 }
 
@@ -903,6 +925,9 @@ body {
 .hotels-rating {
   background-color: var(--color-white-f2);
   padding: 8px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .button-blue,
@@ -1190,11 +1215,11 @@ body {
 }
 
 .shorts {
-  gap: 40px;
+  gap: 28px;
 }
 
 .form-label {
-  min-width: 103px;
+  min-width: 110px;
 }
 
 .message {
@@ -1223,7 +1248,7 @@ body {
 
 .tooltip {
   position: absolute;
-  left: 50px;
+  left: 56px;
   width: 26px;
   height: 26px;
 }
@@ -1361,6 +1386,6 @@ body {
   transform: rotate(90deg);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-}  */
+}
